@@ -22,7 +22,7 @@ function App() {
             <Routes>
                   <Route path="/" element={user?<Dashboard />:<Login/>} />
                   <Route path="/Login" element={!user?<Login />:<Dashboard />} />
-                  <Route path="/Signup" element={!user?<Signup />:<Login/>} />
+                  <Route path="/Signup" element={!user?<Signup />:<Dashboard/>} />
                   <Route path="/Project" element={user?<Project />:<Login/>} />
                   <Route path="/Create" element={user?<Create />:<Login/>} />
             </Routes>
