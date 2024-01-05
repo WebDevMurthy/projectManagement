@@ -1,11 +1,9 @@
 import './Navbar.css';
 import temple from '../assets/temple.svg';
 import React from 'react';
-import {Link, Navigate, Route} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {useLogout} from '../hooks/useLogout'
-import { AuthContext } from '../context/AuthContext';
 import { useAuthContext } from '../hooks/useAuthContext';
-import Dashboard from '../pages/Dashboard/Dashboard';
 
 export default function Navbar() {  
 
